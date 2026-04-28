@@ -39,7 +39,7 @@ Start-BitsTransfer -Source $j -Destination $c
 For the browser’s history, there is a specific artifact named History, this is a database that contains pretty much everything that has ever happened within the browser session, such as visited URLs, timestamps of those visits, page titles, and the number of times a site was accessed. It is stored at: \challenge\kurt_backup\AppData\Local\Microsoft\Edge\User Data\Default
 
 <div align="center">
-  <img src="./Images/sql.png" width="650" height="400" alt="Edge history">
+  <img src="./Images/sql.png" width="1000" height="800" alt="Edge history">
 </div>
 
 As the goal is to identify what time the website was last visited, we will list out everything that is stored in the urls table which contains the most important fields: last_visit_time
