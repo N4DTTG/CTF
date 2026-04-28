@@ -13,7 +13,7 @@ From the description of the challenge, we can already tell what to focus on: the
 For the commands, we can find and analyze the artifact known as ConsoleHost_history.txt, this file stores a plaintext history of commands typed in interactive PowerShell sessions. It’s located at: \challenge\kurt_backup\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine
 
 <div align="center">
-  <img src="./Images/shell.png" width="1100" height="900" alt="PowerShell history">
+  <img src="./Images/shell2.png" width="1100" height="900" alt="PowerShell history">
 </div>
 
 As you can see, a short PowerShell script was executed, it downloaded and ran a remote script, which is a common malware pattern. Step-by-step of how it works:
@@ -39,7 +39,7 @@ Start-BitsTransfer -Source $j -Destination $c
 For the browser’s history, there is a specific artifact named History, this is a database that contains pretty much everything that has ever happened within the browser session, such as visited URLs, timestamps of those visits, page titles, and the number of times a site was accessed. It is stored at: \challenge\kurt_backup\AppData\Local\Microsoft\Edge\User Data\Default
 
 <div align="center">
-  <img src="./Images/sql.png" width="1100" height="900" alt="Edge history">
+  <img src="./Images/sql2.png" width="1100" height="900" alt="Edge history">
 </div>
 
 As the goal is to identify what time the website was last visited, we will list out everything that is stored in the urls table which contains the most important fields: last_visit_time
